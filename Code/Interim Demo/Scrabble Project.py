@@ -9,8 +9,9 @@ import os
 from random import shuffle
 from pynput.keyboard import Key, Controller
 # The line below is calling a file the contains all the required function to run this game:
-execfile("func2.0.py")
-execfile("func3.0.py")
+# Please enter the path to the scripts Manually:
+execfile("<Path>//func2.0.py")
+execfile("<Path>//func3.0.py")
 
 # Titescore is a dictionary that holds the score of indivisual alphabet
 Tilescore = {"A": 1, "B": 3, "C": 3, "D": 2,
