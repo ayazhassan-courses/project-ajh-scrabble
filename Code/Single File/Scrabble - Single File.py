@@ -869,9 +869,9 @@ def change_turn(skipt, nop,event = None):       ##When you end your turn, this f
     status = Submitfunc()
     ##If not skipped, then word played is checked
     if status == True:
-        pname[counter][1] = pname[counter][1] + tempscore
         if TNOT == 0:
-            pname[counter][1] = pname[counter][1] * 2
+            tempscore = tempscore * 2
+        pname[counter][1] = pname[counter][1] + tempscore
         scoreboard()
         if tempscore > maxscore[0]:
             maxscore[0] = tempscore
